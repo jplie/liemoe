@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta chartset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#ffffff">
+  <title>japanese page</title>
+  <link rel="icon" type="image/png" href="cutepic.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&display=swap" rel="stylesheet">
+  <script src="https://cdn.hibikihtml.com/hibiki/v0.3.4/hibiki-prod.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    console.log("Hi! Check my small blog: t.me/lightjp")
+  </script>
+</head>
+<style>
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+    font-family: 'Red Hat Mono', monospace;
+  }
+
+  .wrapper {
+    color: #222021;
+    background-color: floralwhite;
+    padding: 5px;
+  }
+
+  .wrapper.dark {
+    color: antiquewhite;
+    background-color: #222021;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .box {
+    font-size: 20px;
+    border-top: 4px solid papayawhip;
+  }
+
+  .dark a {
+    color: papayawhip;
+    text-decoration: none;
+  }
+
+  a.th-sw {
+    text-decoration: none;
+  }
+
+  dark a.th-sw {
+    color: papayawhip;
+  }
+
+  @media screen and (orientation: portrait) {
+    #toolbar {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .wrapper {
+      width: 40%;
+    }
+  }
+</style>
+<template hibiki>
+  <div class="wrapper" class.dark="*$.dark">
+    <h1 class="title">Hey, that's a small piece of my life &#x1f338;</h1>
+    <div class="box">
+      <a class="th-sw" style="float: right" click.handler="$.dark = !$.dark">{{ $.dark ? 'light' : 'dark' }}</a>
+      <p>Once the Imperial capital of Japan for more than a thousand years, Kyoto still stands as the Heart of Japan
+        despite Tokyo taking on the title as the country’s capital. The city’s history has seen the rise and fall of
+        several Japanese shogunates and saw the construction of some of the country’s most important shrines and
+        temples.</p>
+
+      <p>The history of Kyoto survives today and offers a glimpse into traditional Japanese culture. It is here where
+        many of Japan’s cultural arts began and where they can be still be experienced today. Let us look at the journey
+        Kyoto has taken from its humble beginnings to becoming one of Japan’s most beloved cities.
+      </p>
+    </div>
+  </div>
+</template>
+
+</html>
