@@ -1,4 +1,3 @@
 # See at jplie.github.io/liemoe
-That's a small page with long history of Kyoto,
-for now because I don't have enough time for
-bio writing.
+That's a small page with long history of Kyoto. 
+I still don't know what to write here, so for now everything will remain like this.
